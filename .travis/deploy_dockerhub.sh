@@ -3,7 +3,7 @@ docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" "$DOCKER_REGISTRY"
 
 DOCKER_USERNAME="$DOCKER_USER"
 
-echo "Docker Username "$DOCKER_USERNAME"
+echo "Docker Username $DOCKER_USERNAME"
 
 if [ "$TRAVIS_BRANCH" = "master" ]; then
     TAG="latest"
