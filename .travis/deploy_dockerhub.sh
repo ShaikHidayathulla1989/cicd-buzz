@@ -6,4 +6,4 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 docker build -f Dockerfile -t ${TRAVIS_BRANCH}_${TRAVIS_BUILD_NUMBER}:$TAG .
-docker push ${TRAVIS_BRANCH}_${TRAVIS_BUILD_NUMBER}:$TAG
+docker push $DOCKER_USER/${TRAVIS_BRANCH}_${TRAVIS_BUILD_NUMBER}:$TAG
