@@ -19,3 +19,5 @@ docker build -f Dockerfile -t "${TRAVIS_BRANCH}"_"${TRAVIS_BUILD_NUMBER}":"$TAG"
 docker tag "${TRAVIS_BRANCH}"_"${TRAVIS_BUILD_NUMBER}":"$TAG" "$DOCKER_USER"/"${TRAVIS_BRANCH}"_"${TRAVIS_BUILD_NUMBER}":"$TAG"
  
 docker push "$DOCKER_USER"/"${TRAVIS_BRANCH}"_"${TRAVIS_BUILD_NUMBER}":"$TAG"
+
+docker images
